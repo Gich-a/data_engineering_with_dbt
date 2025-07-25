@@ -26,3 +26,42 @@ Happy modeling!
 [0m15:25:50.647426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDD66C8770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDD7B439B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EDD7BAC270>]}
 [0m15:25:50.647870 [debug] [MainThread]: Flushing usage events
 [0m15:25:52.211419 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:58:59.708575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021537FB3B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021535FB5BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215393ABD90>]}
+
+
+============================== 17:58:59.745775 | c13aebc6-ab04-43a5-9c99-ec807f935642 ==============================
+[0m17:58:59.745775 [info ] [MainThread]: Running with dbt=1.10.5
+[0m17:58:59.746871 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Bob\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:59:00.535188 [info ] [MainThread]: dbt version: 1.10.5
+[0m17:59:00.536429 [info ] [MainThread]: python version: 3.13.5
+[0m17:59:00.537454 [info ] [MainThread]: python path: C:\Users\Bob\OneDrive\Desktop\Learnings\data_engineering_with_dbt\dbt-env\Scripts\python.exe
+[0m17:59:00.538407 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m17:59:00.552610 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m17:59:01.310682 [info ] [MainThread]: Using profiles dir at C:\Users\Bob\.dbt
+[0m17:59:01.312260 [info ] [MainThread]: Using profiles.yml file at C:\Users\Bob\.dbt\profiles.yml
+[0m17:59:01.312972 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Bob\OneDrive\Desktop\Learnings\data_engineering_with_dbt\dbt_project.yml
+[0m17:59:01.315027 [info ] [MainThread]: Configuration:
+[0m17:59:01.315970 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m17:59:01.316758 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:59:01.317334 [info ] [MainThread]: Required dependencies:
+[0m17:59:01.318083 [debug] [MainThread]: Executing "git --help"
+[0m17:59:01.609049 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m17:59:01.610046 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m17:59:01.610833 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m17:59:01.613357 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "data_pipeline", target "dev" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m17:59:01.614388 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Bob\OneDrive\Desktop\Learnings\data_engineering_with_dbt\dbt_project.yml> not found
+
+[0m17:59:01.615404 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m17:59:01.621972 [debug] [MainThread]: Command `dbt debug` failed at 17:59:01.621724 after 2.59 seconds
+[0m17:59:01.622881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002153A9A83E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002153A8E6690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002153A9585A0>]}
+[0m17:59:01.625306 [debug] [MainThread]: Flushing usage events
+[0m17:59:01.947079 [debug] [MainThread]: An error was encountered while trying to flush usage events
