@@ -13,7 +13,7 @@ all_other_violation_codes AS (
         violation_code,
         definition,
         FALSE AS is_manhattan_96th_st_below,
-        other_fee_usd AS fee_usd,
+        all_other_areas AS fee_usd,
     FROM
         {{ ref('bronze_parking_violation_codes') }}
 )
@@ -21,4 +21,4 @@ all_other_violation_codes AS (
 SELECT * FROM manhattan_violation_codes
 UNION ALL
 SELECT * FROM all_other_violation_codes
-ORDER BY violation_code ASC;
+ORDER BY violation_code ASC

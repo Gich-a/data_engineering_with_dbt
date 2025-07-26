@@ -2,7 +2,7 @@ SELECT
     violations.summons_number,
     violations.issue_date,
     violations.violation_code,
-    violation_codes.is_manhattan_96th_st_below,
+    violations.is_manhattan_96th_st_below,
     violations.issuing_agency,
     violations.violation_location,
     violations.violation_precinct,
